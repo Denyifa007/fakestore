@@ -14,7 +14,6 @@ const Products = () => {
       console.log(res);
       setData(res);
 
-      
       // fetch('https://fakestoreapi.com/products')
       // .then(res=>res.json())
       // .then(json=>console.log(json))
@@ -31,25 +30,26 @@ const Products = () => {
 
   return (
     <div className="data">
-      <h2 className="details"><span>BLUE</span>MAIN STORE</h2>
-      {isLoading && <PulseLoader/>}
+      <h2 className="details">
+        <span>BLUE</span>MAIN STORE
+      </h2>
+      {isLoading && <PulseLoader />}
       {error && <h2>{error.message}</h2>}
       <div className="innerdata">
-      {data.map((datum) => {
-        const { id, title, image, rating,price } = datum;
-        return (
-          <div className="innerdatas"  key={id}>
-            <h2>{title}</h2>
-            <img src={image} alt="" className="images" />
-            <h2>{rating.rate}</h2>
-            <h3>Price ${price}</h3>
-            <button>🛒 Add to cart</button>
-
-          </div>
-         
-        );
-      })}
-       </div>
+        {data.map((datum) => {
+          const { id, image, rating, price } = datum;
+          return (
+            <div className="innerdatas" key={id}>
+              <img src={image} alt="" className="images" />
+              <div id="rp">
+              <h2>Rate {rating.rate}</h2>
+              <h3 id="hh">Price ${price}</h3>
+              </div>
+              <button id="cart">🛒 Add to cart</button>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

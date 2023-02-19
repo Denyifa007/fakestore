@@ -26,6 +26,15 @@
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  place-items: center;
+  padding-top: 3rem;
+
+}
+.innerdatas{
+  padding: 1rem;
+  margin: 1rem 0;
+  
 
 }
 .details {
@@ -41,4 +50,28 @@
 .link li:hover{
   font-size: 22px;
   text-decoration: underline;
+}
+#cart{
+  width: 8rem;
+  padding: 8px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+#cart:hover{
+  width: 8rem;
+  padding: 8px;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+#rp{
+  display: flex;
+  justify-content: space-around;
+}
+#hh{
+  padding-top: 6px;
+  color: skyblue;
 }
