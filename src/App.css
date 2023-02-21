@@ -8,7 +8,7 @@
 .soft {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(skyblue,white, deepskyblue);
+  background: linear-gradient(skyblue, white, deepskyblue);
 }
 .soft ul {
   display: flex;
@@ -17,29 +17,30 @@
 }
 
 .images {
-  width: 18rem;
-  height: 20rem;
+  width: 15rem;
+  height: 17rem;
 }
 
 .innerdata {
   margin-left: 1rem;
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   place-content: center;
   place-items: center;
   padding-top: 3rem;
-
 }
-.innerdatas{
+.innerdatas {
   padding: 1rem;
   margin: 1rem 0;
-  
-
+}
+.innerdatas h2{
+  color: black;
 }
 .details {
   font-size: 4rem;
   font-family: "Lobster", cursive;
+
 }
 .details span {
   color: blue;
@@ -47,31 +48,99 @@
 .shop span {
   color: blue;
 }
-.link li:hover{
+.link li:hover {
   font-size: 22px;
   text-decoration: underline;
 }
-#cart{
+#cart {
   width: 8rem;
   padding: 8px;
   background-color: blue;
   color: white;
   border-radius: 5px;
   border: none;
+  font-size: 13px;
 }
-#cart:hover{
+#cart:hover {
   width: 8rem;
   padding: 8px;
   background-color: deepskyblue;
   color: white;
   border-radius: 5px;
   border: none;
+  font-size: 14px;
 }
-#rp{
+#rp {
   display: flex;
   justify-content: space-around;
 }
-#hh{
+#hh {
   padding-top: 6px;
   color: skyblue;
 }
+.images:hover {
+  width: 16rem;
+  height: 18rem;
+}
+#maq {
+  display: flex;
+}
+#jc {
+  font-family: "Lobster", cursive;
+  font-size: 33px;
+  text-decoration: underline;
+}
+#jc span {
+  color: blue;
+}
+#single {
+  width: 16rem;
+  height: 18rem;
+  
+}
+#des {
+  padding: 1rem 5rem 0 5rem;
+  font-size: 16px;
+}
+#sp {
+  margin-top: 3rem;
+}
+#bpp {
+  margin-top: 1rem;
+  width: 14rem;
+  padding: 8px;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+#bpp:hover {
+  width: 14rem;
+  padding: 8px;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+#tit{
+  font-size: 29px;
+  font-family: "Lobster", cursive;
+}
+#cart-btn{
+  padding: 8px;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  margin-left: 37rem;
+}
+#cart-btn:hover{
+  padding: 8px;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  margin-left: 37rem;
+}
+
